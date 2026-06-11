@@ -493,10 +493,96 @@
     .footer-right a { color: var(--muted); transition: color 0.2s; }
     .footer-right a:hover { color: var(--gold); }
 
+    /* ─── What Qualifies ──────────────────────────────────────────────── */
+    #qualifies { background: var(--panel); }
+    .qualifies-intro { max-width: 640px; margin-bottom: 3rem; }
+    .qualifies-intro .eyebrow { margin-bottom: 1rem; }
+    .qualifies-intro h2 { color: var(--light); margin-bottom: 1rem; }
+    .qualifies-intro p { font-size: 1rem; }
+    .qualifies-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 2px; margin-bottom: 3rem;
+    }
+    .qualify-item {
+      background: var(--card); padding: 2rem 2.25rem;
+      border-left: 3px solid var(--gold);
+    }
+    .qualify-label {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem;
+    }
+    .qualify-value {
+      font-size: 1.1rem; color: var(--light); margin-bottom: 0.4rem;
+    }
+    .qualify-detail {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.82rem; color: var(--muted); line-height: 1.5;
+    }
+    .qualifies-cta-bar {
+      background: var(--card); border: 1px solid var(--gold);
+      padding: 2rem 2.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 2rem; flex-wrap: wrap;
+    }
+    .qualifies-cta-bar p {
+      font-size: 1.05rem; color: var(--light);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 300; max-width: 560px;
+    }
+
+    /* ─── Case Study ──────────────────────────────────────────────────── */
+    #casestudy { background: var(--dark); }
+    .casestudy-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 2px; margin-top: 3rem;
+    }
+    .casestudy-specs { background: var(--card); padding: 3rem; }
+    .casestudy-specs .eyebrow { margin-bottom: 1.5rem; }
+    .casestudy-specs h3 { color: var(--light); margin-bottom: 0.5rem; }
+    .casestudy-specs .cs-sub {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.8rem; color: var(--muted); margin-bottom: 2rem;
+    }
+    .cs-line {
+      display: flex; justify-content: space-between; align-items: baseline;
+      padding: 0.7rem 0; border-bottom: 1px solid var(--border);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    .cs-line:last-of-type { border-bottom: none; }
+    .cs-line-label { font-size: 0.78rem; color: var(--muted); }
+    .cs-line-val { font-size: 0.88rem; color: var(--light); }
+    .casestudy-status { background: var(--panel); padding: 3rem; }
+    .casestudy-status .eyebrow { margin-bottom: 1.5rem; }
+    .cs-status-item {
+      padding: 1.25rem 0; border-bottom: 1px solid var(--border);
+      display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .cs-status-item:last-child { border-bottom: none; }
+    .cs-badge {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 0.3rem 0.6rem;
+      flex-shrink: 0; margin-top: 0.1rem;
+    }
+    .cs-badge.done { background: rgba(90,138,90,0.2); color: #7abf7a; }
+    .cs-badge.active { background: rgba(184,154,92,0.2); color: var(--gold); }
+    .cs-badge.pending { background: rgba(138,92,90,0.15); color: #c48880; }
+    .cs-status-text strong {
+      display: block; color: var(--light);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.88rem; margin-bottom: 0.2rem;
+    }
+    .cs-status-text span {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.78rem; color: var(--muted);
+    }
+
     /* ─── Responsive ───────────────────────────────────────────────── */
     @media (max-width: 900px) {
       .thesis-grid, .phases, .returns-grid,
-      .audience-tabs, .team-grid, .contact-grid { grid-template-columns: 1fr; }
+      .audience-tabs, .team-grid, .contact-grid,
+      .qualifies-grid, .casestudy-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .pillars { grid-template-columns: 1fr 1fr; }
       .tiers-grid { grid-template-columns: 1fr; }
@@ -525,10 +611,10 @@
     </a>
     <div class="nav-links">
       <a href="#thesis">The Thesis</a>
+      <a href="#qualifies">Does It Qualify?</a>
       <a href="#audiences">Who We Serve</a>
-      <a href="#returns">Returns</a>
       <a href="#team">Team</a>
-      <a href="#contact" class="btn-nav">Contact Us</a>
+      <a href="#contact" class="btn-nav">Submit Your Property</a>
     </div>
   </div>
 </nav>
@@ -541,9 +627,9 @@
     <div class="hero-inner">
       <div class="eyebrow">Infrastructure Origination &middot; Power-Enabled Land</div>
       <h1>The constraint isn&rsquo;t compute.<br>It&rsquo;s <em>the land beneath it.</em></h1>
-      <p class="hero-sub sans">NLRC identifies, secures, and advances land where critical infrastructure converges — positioning sites for data centers, AI workloads, and gigawatt-scale energy deployment.</p>
+      <p class="hero-sub sans">NLRC is an engineering-led land origination platform that identifies, controls, and advances power-enabled sites for AI infrastructure — partnering with landowners to unlock value they may not know they have.</p>
       <div class="hero-ctas">
-        <a href="#audiences" class="btn-primary">Who We Work With</a>
+        <a href="#contact" class="btn-primary">Submit Your Property</a>
         <a href="#thesis" class="btn-secondary">The Opportunity</a>
       </div>
       <div class="hero-stats">
@@ -605,6 +691,57 @@
     </div>
   </div>
 </section>
+
+<!-- ════════════════════════════════════════════════════════════════
+     WHAT QUALIFIES
+═══════════════════════════════════════════════════════════════════ -->
+<section id="qualifies">
+  <div class="container">
+    <div class="qualifies-intro">
+      <div class="eyebrow">For Landowners</div>
+      <h2>Does your land qualify?</h2>
+      <p>You don&rsquo;t need to know anything about data centers or power grids. If your property checks most of these boxes, NLRC wants to hear from you — at no cost and no obligation to you.</p>
+    </div>
+    <div class="qualifies-grid">
+      <div class="qualify-item">
+        <div class="qualify-label">Acreage</div>
+        <div class="qualify-value">100 – 10,000+ acres</div>
+        <div class="qualify-detail">Larger parcels are ideal, but contiguous 100+ acre tracts qualify for evaluation. Adjacency to other large parcels is a plus.</div>
+      </div>
+      <div class="qualify-item">
+        <div class="qualify-label">Power Access</div>
+        <div class="qualify-value">Within ~2 miles of a substation</div>
+        <div class="qualify-detail">High-voltage transmission lines or a nearby substation are the single most important factor. Proximity to a gas line is a secondary advantage.</div>
+      </div>
+      <div class="qualify-item">
+        <div class="qualify-label">Fiber</div>
+        <div class="qualify-value">Within ~3 miles of long-haul fiber</div>
+        <div class="qualify-detail">Long-haul fiber corridors (not just local cable or DSL) running near or across your property significantly increase site value.</div>
+      </div>
+      <div class="qualify-item">
+        <div class="qualify-label">Terrain</div>
+        <div class="qualify-value">Flat to moderate slope</div>
+        <div class="qualify-detail">Sites with gentle topography are preferred. Rocky or steeply graded parcels increase development cost and reduce value.</div>
+      </div>
+      <div class="qualify-item">
+        <div class="qualify-label">Title</div>
+        <div class="qualify-value">Clear, unencumbered ownership</div>
+        <div class="qualify-detail">We can work with most situations, but clean title with no major easement conflicts streamlines the evaluation process considerably.</div>
+      </div>
+      <div class="qualify-item">
+        <div class="qualify-label">Location</div>
+        <div class="qualify-value">Midwest, Plains, Southwest, Mid-Atlantic</div>
+        <div class="qualify-detail">Our current acquisition focus spans these four regions, though we evaluate strong sites nationwide. Rural and semi-rural parcels welcome.</div>
+      </div>
+    </div>
+    <div class="qualifies-cta-bar">
+      <p>Not sure if your land qualifies? Submit it anyway. Our team reviews every inquiry and will tell you within 10 business days — at no cost and no obligation.</p>
+      <a href="#contact" class="btn-primary">Submit Your Property</a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
 
 <!-- ════════════════════════════════════════════════════════════════
      IMAGE STRIP
@@ -755,7 +892,7 @@
         <div class="audience-points">
           <div class="audience-point"><span class="dot"></span><span>Sites acquired at or near fair market value before infrastructure premium</span></div>
           <div class="audience-point"><span class="dot"></span><span>Staged diligence model limits capital at risk at each phase</span></div>
-          <div class="audience-point"><span class="dot"></span><span>Dual exit: monetization (2–3×) or hold-and-partner (30–40× on high-conviction sites)</span></div>
+          <div class="audience-point"><span class="dot"></span><span>Dual exit: monetization (illustrative 2–3×) or hold-and-partner (illustrative 30–40× on select high-conviction sites with developer partnership)</span></div>
           <div class="audience-point"><span class="dot"></span><span>Ecological integration reduces permitting risk and timeline</span></div>
           <div class="audience-point"><span class="dot"></span><span>National portfolio strategy across multiple infrastructure convergence zones</span></div>
         </div>
@@ -823,13 +960,80 @@
         <div class="return-line"><span class="return-line-label">Implied NLRC value</span><span class="return-line-val" style="color:var(--gold)">~$300M</span></div>
         <div class="return-highlight">
           <div class="return-highlight-val">30–40×</div>
-          <div class="return-highlight-label">Illustrative Return Range</div>
+          <div class="return-highlight-label">Illustrative Range — Select High-Conviction Sites with Developer Partnership</div>
         </div>
         <p class="return-note">Top-tier sites are retained and contributed into partnerships — with landowners keeping ownership and NLRC participating in long-duration infrastructure value.</p>
       </div>
 
     </div>
     <p style="font-size:0.75rem;color:var(--muted);font-family:'Helvetica Neue',Arial,sans-serif;margin-top:1.5rem;font-style:italic;">Illustrative examples only. Returns are not guaranteed. All figures are estimates based on current market assumptions and are subject to change.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ════════════════════════════════════════════════════════════════
+     CASE STUDY
+═══════════════════════════════════════════════════════════════════ -->
+<section id="casestudy">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Pipeline Example</div>
+      <h2>What a qualified site looks like.</h2>
+    </div>
+    <div class="casestudy-grid">
+      <div class="casestudy-specs">
+        <div class="eyebrow">Site Profile &mdash; Anonymized</div>
+        <h3>Central Plains Agricultural Parcel</h3>
+        <p class="cs-sub">Active in NLRC pipeline. Details anonymized pending developer engagement.</p>
+        <div class="cs-line"><span class="cs-line-label">Total Acreage</span><span class="cs-line-val">620 acres (contiguous)</span></div>
+        <div class="cs-line"><span class="cs-line-label">Transmission Access</span><span class="cs-line-val">345kV line — 0.4 miles</span></div>
+        <div class="cs-line"><span class="cs-line-label">Substation Distance</span><span class="cs-line-val">1.1 miles (owned by regional utility)</span></div>
+        <div class="cs-line"><span class="cs-line-label">Natural Gas</span><span class="cs-line-val">16&quot; interstate pipeline — 0.8 miles</span></div>
+        <div class="cs-line"><span class="cs-line-label">Long-Haul Fiber</span><span class="cs-line-val">Within 1.2 miles (major backbone carrier)</span></div>
+        <div class="cs-line"><span class="cs-line-label">Terrain</span><span class="cs-line-val">Near-flat; avg. 1.2% grade</span></div>
+        <div class="cs-line"><span class="cs-line-label">Zoning</span><span class="cs-line-val">Agricultural; industrial overlay permitted</span></div>
+        <div class="cs-line"><span class="cs-line-label">120-Point Score</span><span class="cs-line-val" style="color:var(--gold)">96 / 120</span></div>
+      </div>
+      <div class="casestudy-status">
+        <div class="eyebrow">Diligence Status</div>
+        <div class="cs-status-item">
+          <span class="cs-badge done">Done</span>
+          <div class="cs-status-text">
+            <strong>Tier I — Initial Validation</strong>
+            <span>120-point scoring complete. Infrastructure confirmed. No fatal flaws identified. Landowner LOI executed.</span>
+          </div>
+        </div>
+        <div class="cs-status-item">
+          <span class="cs-badge done">Done</span>
+          <div class="cs-status-text">
+            <strong>Phase I ESA &amp; ALTA Survey</strong>
+            <span>No recognized environmental conditions. Clean title confirmed. Survey complete.</span>
+          </div>
+        </div>
+        <div class="cs-status-item">
+          <span class="cs-badge active">Active</span>
+          <div class="cs-status-text">
+            <strong>Tier II — Utility Engagement</strong>
+            <span>Interconnection feasibility study underway with regional ISO. Preliminary results expected within 60 days.</span>
+          </div>
+        </div>
+        <div class="cs-status-item">
+          <span class="cs-badge active">Active</span>
+          <div class="cs-status-text">
+            <strong>Habitat Enhancement Planning</strong>
+            <span>Native grass restoration and pollinator corridor design underway. Landowner participating in implementation.</span>
+          </div>
+        </div>
+        <div class="cs-status-item">
+          <span class="cs-badge pending">Pending</span>
+          <div class="cs-status-text">
+            <strong>Tier III — Developer Partnership</strong>
+            <span>Three developer conversations active. Site capable of supporting 150–400MW initial deployment.</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -858,8 +1062,8 @@
       </div>
       <div class="pillar">
         <div class="pillar-num">03 &mdash; ECOLOGICAL EDGE</div>
-        <h3>Habitat as a Permitting Advantage</h3>
-        <p>Habitat enhancement — native restoration, pollinator corridors, riparian buffers — is embedded into site planning from day one, preemptively addressing regulatory and community objections.</p>
+        <h3>Habitat as a Permitting Accelerator</h3>
+        <p>Native restoration, pollinator corridors, and riparian buffers are embedded from day one — compressing permitting timelines, building community alignment, and attracting ESG-driven capital by reducing regulatory risk before it materializes.</p>
       </div>
       <div class="pillar">
         <div class="pillar-num">04 &mdash; SPEED</div>
@@ -998,7 +1202,7 @@
     </div>
     <p class="footer-note">Illustrative financial examples are for informational purposes only and do not constitute an offer to sell or a solicitation to buy any security. Past performance is not indicative of future results.</p>
     <div class="footer-right">
-      <div style="margin-bottom:0.4rem">&copy; 2025 Native Land &amp; Resource Conservancy, LLC</div>
+      <div style="margin-bottom:0.4rem">&copy; 2026 Native Land &amp; Resource Conservancy, LLC</div>
       <div>Delaware Limited Liability Company</div>
     </div>
   </div>
