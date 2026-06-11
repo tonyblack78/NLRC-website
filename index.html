@@ -1106,9 +1106,9 @@
 
       <div class="team-card">
         <div class="team-name">Brian Beauchamp</div>
-        <div class="team-title">Co-Founder &amp; AI Landman / Project Manager</div>
+        <div class="team-title">Co-Founder &amp; AI Landman / Project Manager &nbsp;&middot;&nbsp; <a href="mailto:brian@nlrconservancy.com" style="color:var(--gold);font-weight:400;">brian@nlrconservancy.com</a></div>
         <p>Brian is the operational backbone of NLRC&rsquo;s national acquisition platform. He designed and built the 120-point scoring framework, evaluation workflows, and infrastructure intelligence systems that allow NLRC to screen thousands of parcels with precision.</p>
-        <p>Brian leads infrastructure analysis (transmission, gas pipelines, fiber), coordinates ALTA surveys, Phase I ESAs, geotechnical testing, wetlands reviews, and manages utility and vendor relationships across every active site. He embeds ecological planning into each acquisition — transforming raw land into shovel-ready, premium-priced assets.</p>
+        <p>Brian leads infrastructure analysis (transmission, gas pipelines, fiber), coordinates ALTA surveys, Phase I ESAs, geotechnical testing, wetlands reviews, and manages utility and vendor relationships across every active site. He embeds ecological planning into each acquisition — transforming raw land into shovel-ready, premium-priced assets. Reach him directly at <a href="mailto:brian@nlrconservancy.com" style="color:var(--gold);">brian@nlrconservancy.com</a>.</p>
       </div>
 
     </div>
@@ -1152,7 +1152,7 @@
         </div>
       </div>
       <div class="contact-right">
-        <form onsubmit="handleSubmit(event)">
+        <form action="https://formspree.io/f/xykadjok" method="POST">
           <div class="form-row">
             <div class="form-group">
               <label for="fname">First Name</label>
@@ -1209,19 +1209,7 @@
 </footer>
 
 <script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('.btn-submit');
-    btn.textContent = 'Message Sent ✓';
-    btn.style.background = '#5a8a5a';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = 'Send Message →';
-      btn.style.background = '';
-      btn.disabled = false;
-      e.target.reset();
-    }, 4000);
-  }
+  // Form is handled by Formspree (action attribute on <form>)
 
   // Smooth active nav highlighting
   const sections = document.querySelectorAll('section[id]');
