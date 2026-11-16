@@ -1,0 +1,22 @@
+# Native Land & Resource Conservancy (NLRC)
+
+> NLRC is an engineering-led land origination company that identifies, diligences and advances powered land (also called power-enabled land) for data center developers and AI infrastructure, in partnership with landowners. Data center developers can connect directly with Brian Beauchamp, Co-Founder and AI Landman / Project Manager, at brian@nlrconservancy.com.
+
+Key facts:
+- Powered land = land with a realistic path to power at data center scale: near high-voltage transmission and a substation, with natural gas and long-haul fiber nearby.
+- Every site is scored on a proprietary 120-point framework (transmission, substation topology, natural gas, fiber, zoning, ecological characteristics) and advanced through staged Tier I, II and III diligence.
+- Target sites support 100 MW to gigawatt-scale deployments. Deal structures: ground lease, joint venture, equity participation or acquisition.
+- Regions: Midwest, Plains, Southwest and Mid-Atlantic, plus strong projects nationwide.
+- NLRC is not a contractor, broker or utility.
+- Landowners can submit property for evaluation at no cost; NLRC bears due diligence costs and the landowner retains ownership during evaluation.
+
+## Pages
+- [Powered Land for Data Centers](https://www.nlrconservancy.com/powered-land-for-data-centers/): what NLRC offers developers, example site profile, FAQ and a request form that goes to Brian Beauchamp
+- [Data Center Site Selection Checklist](https://www.nlrconservancy.com/data-center-site-selection-checklist/): power, gas, fiber, land, zoning, environmental and title criteria
+- [Powered Land by Region](https://www.nlrconservancy.com/powered-land-by-region/): Midwest, Plains, Southwest and Mid-Atlantic compared
+- [Data Center Contractors & Vendors](https://www.nlrconservancy.com/data-center-contractors-and-vendors/): NLRC's network of qualified contractors, engineers and consultants, and how introductions work
+- [Home / Landowners](https://www.nlrconservancy.com/): the thesis, landowner qualification, how NLRC works, team and contact
+
+## Contact
+- Email: brian@nlrconservancy.com
+- LinkedIn: https://www.linkedin.com/company/native-land-and-resource-conservancy/
